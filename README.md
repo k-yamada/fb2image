@@ -18,12 +18,12 @@ Or install it yourself as:
 
 ## Usage
 
-    # require 'fb2image'
+    require 'fb2image'
 
     width  = 100
     height = 20
 
-    # make gradation fb
+    # make gradation rawdata
     line = (0...width).map {|x| [x * 255 / width, 0, 0, 0] }
     fb =  ([line] * height).flatten
 
